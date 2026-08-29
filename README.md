@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 DevOps & Cloud Infrastructure Control Center Portfolio
 
-## Getting Started
+A modern, high-performance, interactive portfolio designed specifically for **DevOps, SysAdmin, and Cloud Infrastructure Engineers**. Features a custom terminal-like interactive command interface, real-time visual system health metrics, tech radar scanner animations, and automated deployment architecture.
 
-First, run the development server:
+🌐 **Live Demo:** [https://devops-portfolio-one-sandy.vercel.app](https://devops-portfolio-one-sandy.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack & Tooling
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Category | Technologies / Tools Used |
+| :--- | :--- |
+| **Frontend Framework** | Next.js 14+ (App Router), TypeScript |
+| **Styling & Motion** | Tailwind CSS, Custom Keyframe Tech Animations |
+| **CI/CD & Hosting** | GitHub Actions, Vercel |
+| **DevOps Core Tech Focus** | Docker, Kubernetes, Terraform, AWS, Linux Administration |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌟 Key Features
 
-To learn more about Next.js, take a look at the following resources:
+* **Terminal Interaction Engine:** Integrated Web Terminal (`Terminal.tsx`) allowing visitors to interactively execute custom commands (`help`, `about`, `skills`, `projects`, `clear`).
+* **Futuristic Tech Motion UI:** Real-time laser radar scanning, floating status badges (`SYS_ONLINE`, `K8S_READY`), and ambient pulse glows.
+* **Collaborative Projects Matrix:** Detailed showcases of collaborative software systems with direct GitHub attribution.
+* **Automated Pipeline Deployment:** Continuous integration and continuous delivery (CI/CD) setup using GitHub Actions and Vercel triggers.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Architecture & Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+devops-portfolio/
+├── app/
+├── components/
+│   └── Terminal.tsx      # Web Terminal Interactive Component
+├── public/
+│   └── profile.png       # Profile Image Asset
+├── .gitignore
+├── next.config.ts        # Next.js Configurations
+├── package.json
+└── README.md
