@@ -55,6 +55,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Me Section */}
+      <section className="max-w-6xl mx-auto my-16">
+        <h2 className="text-xl font-bold font-mono mb-6 border-b border-gray-800 pb-2 text-green-400">
+          // ABOUT_SYSADMIN
+        </h2>
+        <div className="bg-gray-900/40 border border-gray-800 p-6 md:p-8 rounded-lg hover:border-green-500/30 transition">
+          <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+            I am a passionate <span className="text-green-400 font-semibold">DevOps & Cloud Infrastructure Engineer</span> dedicated to designing, automating, and maintaining highly available cloud systems. With a strong foundation in Linux administration, containerization, and modern CI/CD practices, I bridge the gap between development and operations to accelerate software delivery.
+          </p>
+          <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-6">
+            My technical journey involves deploying infrastructure as code using <span className="text-gray-200 font-mono text-xs bg-gray-800 px-2 py-1 rounded">Terraform</span>, orchestrating container workloads with <span className="text-gray-200 font-mono text-xs bg-gray-800 px-2 py-1 rounded">Docker & Kubernetes</span>, and implementing robust monitoring systems to ensure operational reliability. I thrive in collaborative team environments and enjoy solving complex system bottlenecks.
+          </p>
+
+          {/* Key Highlights */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-gray-800/80">
+            <div>
+              <span className="text-xs font-mono text-gray-500 block">CORE FOCUS</span>
+              <span className="text-sm font-semibold text-gray-200">Cloud Automation & IaC</span>
+            </div>
+            <div>
+              <span className="text-xs font-mono text-gray-500 block">WORKFLOW</span>
+              <span className="text-sm font-semibold text-gray-200">GitOps & Microservices</span>
+            </div>
+            <div>
+              <span className="text-xs font-mono text-gray-500 block">LOCATION / METHOD</span>
+              <span className="text-sm font-semibold text-gray-200">Sri Lanka (Remote / Hybrid)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Skills Section */}
       <section className="max-w-6xl mx-auto my-16">
         <h2 className="text-xl font-bold font-mono mb-6 border-b border-gray-800 pb-2 text-green-400">
