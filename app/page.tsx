@@ -58,7 +58,7 @@ export default function Home() {
       {/* About Me Section */}
       <section className="max-w-6xl mx-auto my-16">
         <h2 className="text-xl font-bold font-mono mb-6 border-b border-gray-800 pb-2 text-green-400">
-          // ABOUT_SYSADMIN
+          // ABOUT ME
         </h2>
         <div className="bg-gray-900/40 border border-gray-800 p-6 md:p-8 rounded-lg hover:border-green-500/30 transition">
           <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
