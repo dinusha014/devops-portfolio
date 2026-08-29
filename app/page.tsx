@@ -82,7 +82,41 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          {/* Project 1: EventSphere (Collaborative Project) */}
+          {/* Project 1: Sri Lankan Fake News Detection */}
+          <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition flex flex-col justify-between">
+            <div>
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-xs font-mono text-green-400 bg-green-500/10 px-2 py-1 rounded">ML & Team Collaboration</span>
+                <span className="text-xs font-mono text-gray-500">Collaborative</span>
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-white">Sri Lankan Fake News Detection</h3>
+              <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+                A collaborative machine learning project focused on detecting fake news in the Sri Lankan context. Managed version control, pipeline structuring, and collaborative workflows.
+              </p>
+            </div>
+            <div>
+              <div className="mb-4">
+                <span className="text-xs font-mono text-gray-400 block mb-1">Collaborators:</span>
+                <div className="flex flex-wrap gap-2 text-xs font-mono">
+                  <a href="https://github.com/dinusha014" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@dinusha014</a>
+                  <span className="text-gray-600">|</span>
+                  <a href="https://github.com/Rashini25" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@Rashini25</a>
+                  <span className="text-gray-600">|</span>
+                  <a href="https://github.com/nisanganethra" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@nisanganethra</a>
+                </div>
+              </div>
+              <a
+                href="https://github.com/dinusha014/Sri-Lankan-Fake-News-Detection"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-400 hover:underline text-xs font-mono block"
+              >
+                [ GitHub Repository ]
+              </a>
+            </div>
+          </div>
+
+          {/* Project 2: EventSphere */}
           <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition flex flex-col justify-between">
             <div>
               <div className="flex justify-between items-center mb-2">
@@ -116,7 +150,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Project 2: Tourism Microbusiness Assistant */}
+          {/* Project 3: Tourism Microbusiness Assistant */}
           <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition flex flex-col justify-between">
             <div>
               <span className="text-xs font-mono text-green-400 bg-green-500/10 px-2 py-1 rounded">AI Agent & API Integration</span>
