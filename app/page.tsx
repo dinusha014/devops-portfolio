@@ -1,6 +1,6 @@
 import Terminal from "./components/Terminal";
 import Image from "next/image";
-import profileImg from "../public/profile.png";
+import profileImg from "@/public/profile.png";
 
 export default function Home() {
   return (
@@ -23,6 +23,7 @@ export default function Home() {
               src={profileImg}
               alt="Chamod Dinusha"
               fill
+              sizes="(max-width: 768px) 100vw, 256px"
               className="object-cover rounded-xl"
               priority
             />
@@ -80,25 +81,44 @@ export default function Home() {
           // FEATURED_INFRASTRUCTURE_PROJECTS
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition">
-            <span className="text-xs font-mono text-green-400 bg-green-500/10 px-2 py-1 rounded">AWS + K8s</span>
-            <h3 className="text-lg font-bold mt-3 mb-2">Automated Multi-Region EKS Cluster</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Deployed a highly available Kubernetes architecture using Terraform with automated CI/CD via GitHub Actions.
-            </p>
-            <div className="flex gap-2 text-xs font-mono text-gray-500">
-              <span>#Terraform</span> <span>#AWS</span> <span>#Kubernetes</span>
+          {/* Project 1: Tourism Microbusiness Assistant */}
+          <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition flex flex-col justify-between">
+            <div>
+              <span className="text-xs font-mono text-green-400 bg-green-500/10 px-2 py-1 rounded">AI Agent & API Integration</span>
+              <h3 className="text-lg font-bold mt-3 mb-2">Sri Lanka Tourism Microbusiness Assistant</h3>
+              <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+                Engineered an AI-driven assistant designed to empower local tourism microbusinesses in Sri Lanka with automated customer interaction, workflow integration, and scalable deployment.
+              </p>
+            </div>
+            <div>
+              <div className="flex flex-wrap gap-2 text-xs font-mono text-gray-500 mb-4">
+                <span>#AI_Agent</span> <span>#Python</span> <span>#API_Orchestration</span>
+              </div>
+              <a
+                href="https://github.com/dinusha014/SriLanka-Tourism-Microbusiness-Assistant"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-400 hover:underline text-xs font-mono"
+              >
+                [ GitHub Repository ]
+              </a>
             </div>
           </div>
 
-          <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition">
-            <span className="text-xs font-mono text-green-400 bg-green-500/10 px-2 py-1 rounded">Observability</span>
-            <h3 className="text-lg font-bold mt-3 mb-2">Centralized Prometheus & Grafana Setup</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Engineered end-to-end monitoring & alerting infrastructure for 50+ microservices with custom dashboards.
-            </p>
-            <div className="flex gap-2 text-xs font-mono text-gray-500">
-              <span>#Prometheus</span> <span>#Grafana</span> <span>#Docker</span>
+          {/* Project 2: Multi-Region EKS Cluster */}
+          <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition flex flex-col justify-between">
+            <div>
+              <span className="text-xs font-mono text-green-400 bg-green-500/10 px-2 py-1 rounded">AWS + K8s</span>
+              <h3 className="text-lg font-bold mt-3 mb-2">Automated Multi-Region EKS Cluster</h3>
+              <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+                Deployed a highly available Kubernetes architecture using Terraform with automated CI/CD via GitHub Actions.
+              </p>
+            </div>
+            <div>
+              <div className="flex flex-wrap gap-2 text-xs font-mono text-gray-500 mb-4">
+                <span>#Terraform</span> <span>#AWS</span> <span>#Kubernetes</span>
+              </div>
+              <span className="text-gray-500 text-xs font-mono">[ Architecture Spec ]</span>
             </div>
           </div>
         </div>
@@ -108,7 +128,7 @@ export default function Home() {
       <section id="contact" className="max-w-6xl mx-auto my-16 text-center border-t border-gray-800 pt-10">
         <h2 className="text-2xl font-bold mb-3">Get In Touch</h2>
         <p className="text-gray-400 text-sm mb-6">Open for DevOps, SysAdmin, and Cloud Engineering opportunities.</p>
-        <a href="mailto:your-email@gmail.com" className="bg-green-500 hover:bg-green-600 text-black px-6 py-3 rounded-md font-bold text-sm transition inline-block">
+        <a href="mailto:chamoddinusha176@gmail.com" className="bg-green-500 hover:bg-green-600 text-black px-6 py-3 rounded-md font-bold text-sm transition inline-block">
           Send System Message (Email)
         </a>
       </section>
