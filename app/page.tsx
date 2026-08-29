@@ -81,7 +81,42 @@ export default function Home() {
           // FEATURED_INFRASTRUCTURE_PROJECTS
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Project 1: Tourism Microbusiness Assistant */}
+
+          {/* Project 1: EventSphere (Collaborative Project) */}
+          <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition flex flex-col justify-between">
+            <div>
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-xs font-mono text-green-400 bg-green-500/10 px-2 py-1 rounded">Team Collaboration</span>
+                <span className="text-xs font-mono text-gray-500">Collaborative</span>
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-white">EventSphere</h3>
+              <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+                A collaborative event management platform built as a team. Engineered system architecture, version control workflows, and deployment integrations.
+              </p>
+            </div>
+            <div>
+              <div className="mb-4">
+                <span className="text-xs font-mono text-gray-400 block mb-1">Collaborators:</span>
+                <div className="flex flex-wrap gap-2 text-xs font-mono">
+                  <a href="https://github.com/dinusha014" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@dinusha014</a>
+                  <span className="text-gray-600">|</span>
+                  <a href="https://github.com/Rashini25" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@Rashini25</a>
+                  <span className="text-gray-600">|</span>
+                  <a href="https://github.com/nisanganethra" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@nisanganethra</a>
+                </div>
+              </div>
+              <a
+                href="https://github.com/dinusha014/EventSphere"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-400 hover:underline text-xs font-mono block"
+              >
+                [ GitHub Repository ]
+              </a>
+            </div>
+          </div>
+
+          {/* Project 2: Tourism Microbusiness Assistant */}
           <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition flex flex-col justify-between">
             <div>
               <span className="text-xs font-mono text-green-400 bg-green-500/10 px-2 py-1 rounded">AI Agent & API Integration</span>
@@ -105,22 +140,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Project 2: Multi-Region EKS Cluster */}
-          <div className="bg-gray-900/40 border border-gray-800 p-6 rounded-lg hover:border-green-500/30 transition flex flex-col justify-between">
-            <div>
-              <span className="text-xs font-mono text-green-400 bg-green-500/10 px-2 py-1 rounded">AWS + K8s</span>
-              <h3 className="text-lg font-bold mt-3 mb-2">Automated Multi-Region EKS Cluster</h3>
-              <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-                Deployed a highly available Kubernetes architecture using Terraform with automated CI/CD via GitHub Actions.
-              </p>
-            </div>
-            <div>
-              <div className="flex flex-wrap gap-2 text-xs font-mono text-gray-500 mb-4">
-                <span>#Terraform</span> <span>#AWS</span> <span>#Kubernetes</span>
-              </div>
-              <span className="text-gray-500 text-xs font-mono">[ Architecture Spec ]</span>
-            </div>
-          </div>
         </div>
       </section>
 
