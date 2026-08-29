@@ -4,7 +4,7 @@ import profileImg from "@/public/profile.png";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0d1117] text-white p-6 font-sans">
+    <main className="min-h-screen bg-[#0d1117] text-white p-6 font-sans overflow-x-hidden">
       {/* Top Status Bar */}
       <header className="flex justify-between items-center border-b border-gray-800 pb-4 mb-10 max-w-6xl mx-auto">
         <div className="flex items-center space-x-2">
@@ -16,15 +16,45 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto my-12">
-        {/* Profile Image Card */}
-        <div className="flex justify-center">
-          <div className="relative w-64 h-80 rounded-2xl overflow-hidden border-2 border-green-500/30 bg-gradient-to-b from-gray-800 to-black p-2 shadow-2xl shadow-green-500/10">
+        
+        {/* Profile Image Card with Futuristic Tech Motion */}
+        <div className="flex justify-center relative group">
+          
+          {/* Background Ambient Glow */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-green-500/30 to-emerald-500/30 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+
+          {/* Floating Tech Badge Left Top */}
+          <div className="absolute -top-3 -left-4 z-20 bg-black/80 border border-green-500/50 px-2 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1">
+            <span className="h-1.5 w-1.5 bg-green-400 rounded-full animate-ping"></span>
+            SYS_ONLINE
+          </div>
+
+          {/* Floating Tech Badge Right Bottom */}
+          <div className="absolute -bottom-3 -right-4 z-20 bg-black/80 border border-green-500/50 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1">
+            <span className="text-xs">⚡</span> K8S_READY
+          </div>
+
+          {/* Main Card Container */}
+          <div className="relative w-64 h-80 rounded-2xl overflow-hidden border-2 border-green-500/40 bg-gradient-to-b from-gray-900 via-black to-gray-950 p-2 shadow-2xl shadow-green-500/20 group-hover:border-green-400 transition-all duration-500">
+            
+            {/* Tech Radar Laser Scanning Line */}
+            <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
+              <div className="w-full h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent shadow-[0_0_15px_#22c55e] animate-[bounce_3s_infinite] opacity-70"></div>
+            </div>
+
+            {/* Corner Bracket Accents for Sci-Fi Look */}
+            <div className="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-green-400 z-10"></div>
+            <div className="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-green-400 z-10"></div>
+            <div className="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-green-400 z-10"></div>
+            <div className="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-green-400 z-10"></div>
+
+            {/* Profile Image with subtle Zoom Motion on Hover */}
             <Image
               src={profileImg}
               alt="Chamod Dinusha"
               fill
               sizes="(max-width: 768px) 100vw, 256px"
-              className="object-cover rounded-xl"
+              className="object-cover rounded-xl transform group-hover:scale-105 transition duration-700 ease-out grayscale-[20%] group-hover:grayscale-0"
               priority
             />
           </div>
@@ -40,7 +70,7 @@ export default function Home() {
             Automating deployments, building resilient cloud systems, and scaling Kubernetes clusters with 99.99% uptime.
           </p>
           <div className="flex gap-4">
-            <a href="#projects" className="bg-green-500 hover:bg-green-600 text-black px-4 py-2 rounded-md font-semibold text-sm transition">
+            <a href="#projects" className="bg-green-500 hover:bg-green-600 text-black px-4 py-2 rounded-md font-semibold text-sm transition shadow-lg shadow-green-500/20 hover:shadow-green-500/40">
               View Architecture
             </a>
             <a href="#contact" className="border border-gray-700 hover:border-gray-500 px-4 py-2 rounded-md font-semibold text-sm text-gray-300 transition">
@@ -58,7 +88,7 @@ export default function Home() {
       {/* About Me Section */}
       <section className="max-w-6xl mx-auto my-16">
         <h2 className="text-xl font-bold font-mono mb-6 border-b border-gray-800 pb-2 text-green-400">
-          // ABOUT ME
+          // ABOUT_SYSADMIN
         </h2>
         <div className="bg-gray-900/40 border border-gray-800 p-6 md:p-8 rounded-lg hover:border-green-500/30 transition">
           <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
