@@ -24,3 +24,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom Walk-In Entrance Animation for Profile Photo */
+@keyframes walkIn {
+  0% {
+    transform: translateX(-150px) scale(0.6) rotate(-12deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(20px) scale(1.05) rotate(3deg);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateX(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.animate-walk-in {
+  animation: walkIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
