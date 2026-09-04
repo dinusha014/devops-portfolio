@@ -25,22 +25,41 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Custom Walk-In Entrance Animation for Profile Photo */
-@keyframes walkIn {
+/* Real Human Step-by-Step Walking Rhythm Keyframes */
+@keyframes naturalHumanWalk {
   0% {
-    transform: translateX(-150px) scale(0.6) rotate(-12deg);
+    transform: translateX(-200px) translateY(0px) rotate(-5deg);
     opacity: 0;
   }
+  15% {
+    transform: translateX(-160px) translateY(-14px) rotate(3deg); /* Step 1 UP */
+    opacity: 0.3;
+  }
+  30% {
+    transform: translateX(-120px) translateY(0px) rotate(-3deg);  /* Step 1 DOWN (Foot touch) */
+    opacity: 0.6;
+  }
+  45% {
+    transform: translateX(-80px) translateY(-12px) rotate(2deg);  /* Step 2 UP */
+    opacity: 0.8;
+  }
   60% {
-    transform: translateX(20px) scale(1.05) rotate(3deg);
-    opacity: 0.85;
+    transform: translateX(-40px) translateY(0px) rotate(-2deg);  /* Step 2 DOWN (Foot touch) */
+    opacity: 0.95;
+  }
+  75% {
+    transform: translateX(-15px) translateY(-6px) rotate(1deg);   /* Step 3 Settle UP */
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(-5px) translateY(0px) rotate(-1deg);   /* Step 3 Settle DOWN */
   }
   100% {
-    transform: translateX(0) scale(1) rotate(0deg);
+    transform: translateX(0px) translateY(0px) rotate(0deg);      /* Final Standing Position */
     opacity: 1;
   }
 }
 
 .animate-walk-in {
-  animation: walkIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: naturalHumanWalk 2.2s cubic-bezier(0.35, 0, 0.25, 1) forwards;
 }
