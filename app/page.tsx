@@ -16,30 +16,30 @@ export default function Home() {
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto my-12">
         
-        {/* Animated GIF Profile Character */}
+        {/* Animated GIF Profile Character (Larger Scale) */}
         <div className="flex justify-center relative group">
           
           {/* Subtle Ambient Green Backdrop Glow */}
           <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 via-emerald-500/10 to-transparent rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
 
           {/* Floating Tech Badges */}
-          <div className="absolute -top-2 -left-2 z-20 bg-black/80 border border-green-500/50 px-2 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1">
+          <div className="absolute -top-4 -left-4 z-20 bg-black/80 border border-green-500/50 px-2.5 py-1 rounded-md text-[11px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1">
             <span className="h-1.5 w-1.5 bg-green-400 rounded-full animate-ping"></span>
             SYS_ONLINE
           </div>
 
-          <div className="absolute bottom-2 -right-2 z-20 bg-black/80 border border-green-500/50 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1">
+          <div className="absolute bottom-2 -right-4 z-20 bg-black/80 border border-green-500/50 px-2.5 py-1 rounded-md text-[11px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1">
             <span className="text-xs">⚡</span> K8S_READY
           </div>
 
-          {/* GIF Animation Image Container */}
-          <div className="relative w-72 h-96 transition-transform duration-500 ease-out group-hover:scale-105 drop-shadow-[0_10px_25px_rgba(34,197,94,0.15)]">
+          {/* Larger GIF Image Container (w-96 h-[480px]) */}
+          <div className="relative w-80 md:w-96 h-[420px] md:h-[480px] transition-transform duration-500 ease-out group-hover:scale-105 drop-shadow-[0_15px_30px_rgba(34,197,94,0.2)]">
             <Image
               src="/profile.gif"
               alt="Chamod Dinusha Walking Animation"
               fill
               unoptimized
-              sizes="(max-width: 768px) 100vw, 300px"
+              sizes="(max-width: 768px) 100vw, 400px"
               className="object-contain"
               priority
             />
