@@ -1,6 +1,5 @@
 import Terminal from "./components/Terminal";
 import Image from "next/image";
-import profileImg from "@/public/profile.png";
 
 export default function Home() {
   return (
@@ -17,13 +16,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto my-12">
         
-        {/* Profile Image with Seamless Transparent Motion (No Box/Border) */}
-        <div className="flex justify-center relative group [perspective:1000px]">
+        {/* Animated GIF Profile Character */}
+        <div className="flex justify-center relative group">
           
           {/* Subtle Ambient Green Backdrop Glow */}
           <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 via-emerald-500/10 to-transparent rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
 
-          {/* Floating Status Badges */}
+          {/* Floating Tech Badges */}
           <div className="absolute -top-2 -left-2 z-20 bg-black/80 border border-green-500/50 px-2 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1">
             <span className="h-1.5 w-1.5 bg-green-400 rounded-full animate-ping"></span>
             SYS_ONLINE
@@ -33,14 +32,15 @@ export default function Home() {
             <span className="text-xs">⚡</span> K8S_READY
           </div>
 
-          {/* Transparent Profile Image with Smooth Entrance Turn Animation */}
-          <div className="relative w-72 h-96 transition-all duration-700 ease-out transform group-hover:[transform:rotateY(0deg)_scale(1.05)] [transform:rotateY(-12deg)] drop-shadow-[0_10px_25px_rgba(34,197,94,0.15)] group-hover:drop-shadow-[0_15px_35px_rgba(34,197,94,0.3)]">
+          {/* GIF Animation Image Container */}
+          <div className="relative w-72 h-96 transition-transform duration-500 ease-out group-hover:scale-105 drop-shadow-[0_10px_25px_rgba(34,197,94,0.15)]">
             <Image
-              src={profileImg}
-              alt="Chamod Dinusha"
+              src="/profile.gif"
+              alt="Chamod Dinusha Walking Animation"
               fill
+              unoptimized
               sizes="(max-width: 768px) 100vw, 300px"
-              className="object-contain filter brightness-105 contrast-105"
+              className="object-contain"
               priority
             />
           </div>
