@@ -17,41 +17,41 @@ export default function Home() {
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto my-12">
         
-        {/* Unique Cyberpunk Grid Profile Frame (Larger Scale) */}
+        {/* Tight-Fit Sci-Fi Profile Frame */}
         <div className="flex justify-center relative group">
           
-          {/* Background Neon Green Glow */}
-          <div className="absolute inset-0 bg-green-500/20 blur-3xl rounded-3xl opacity-70 group-hover:opacity-100 transition duration-700"></div>
+          {/* Backdrop Glow */}
+          <div className="absolute inset-0 bg-green-500/25 blur-2xl rounded-2xl opacity-70 group-hover:opacity-100 transition duration-500"></div>
 
-          {/* Sci-Fi Status Badges */}
-          <div className="absolute -top-4 -left-4 z-20 bg-black/90 border border-green-500/60 px-3 py-1 rounded-md text-[11px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1.5">
+          {/* Floating Badges */}
+          <div className="absolute -top-3 -left-3 z-20 bg-black/90 border border-green-500/60 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 bg-green-400 rounded-full animate-ping"></span>
             SYS_ONLINE
           </div>
 
-          <div className="absolute -bottom-4 -right-4 z-20 bg-black/90 border border-green-500/60 px-3 py-1 rounded-md text-[11px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1.5">
+          <div className="absolute -bottom-3 -right-3 z-20 bg-black/90 border border-green-500/60 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1.5">
             <span className="text-xs">⚡</span> K8S_READY
           </div>
 
-          {/* Larger Futuristic Cyber Card Frame (w-80 md:w-96 h-[460px] md:h-[500px]) */}
-          <div className="relative w-80 md:w-96 h-[460px] md:h-[500px] rounded-3xl border-2 border-green-500/40 bg-gradient-to-b from-gray-900/90 via-black to-gray-950 p-3 shadow-2xl shadow-green-500/20 group-hover:border-green-400 transition-all duration-500 overflow-hidden flex items-center justify-center">
+          {/* Perfectly Fitted Frame (w-64 md:w-72 h-[340px] md:h-[380px]) */}
+          <div className="relative w-64 md:w-72 h-[340px] md:h-[380px] rounded-2xl border border-green-500/50 bg-[#0a0e14] p-2 shadow-xl shadow-green-500/10 group-hover:border-green-400 transition-all duration-500 overflow-hidden">
             
-            {/* Cyber Grid Pattern Backdrop */}
-            <div className="absolute inset-0 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:16px_16px] opacity-20 pointer-events-none"></div>
+            {/* Grid Mesh Overlay */}
+            <div className="absolute inset-0 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:12px_12px] opacity-15 pointer-events-none"></div>
 
-            {/* Corner Bracket Sci-Fi Accents */}
-            <div className="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-green-400 z-10"></div>
-            <div className="absolute top-3 right-3 w-5 h-5 border-t-2 border-r-2 border-green-400 z-10"></div>
-            <div className="absolute bottom-3 left-3 w-5 h-5 border-b-2 border-l-2 border-green-400 z-10"></div>
-            <div className="absolute bottom-3 right-3 w-5 h-5 border-b-2 border-r-2 border-green-400 z-10"></div>
+            {/* Corner Sci-Fi Brackets */}
+            <div className="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-green-400 z-10"></div>
+            <div className="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-green-400 z-10"></div>
+            <div className="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-green-400 z-10"></div>
+            <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-green-400 z-10"></div>
 
-            {/* Profile Photo - Scaled Larger */}
+            {/* Profile Image Fitted Tight */}
             <Image
               src={profileImg}
               alt="Chamod Dinusha"
               fill
-              sizes="(max-width: 768px) 100vw, 400px"
-              className="object-contain rounded-2xl transform group-hover:scale-105 transition duration-700 ease-out filter brightness-105 contrast-105"
+              sizes="(max-width: 768px) 100vw, 300px"
+              className="object-cover rounded-xl transform group-hover:scale-105 transition duration-500 filter brightness-105"
               priority
             />
           </div>
