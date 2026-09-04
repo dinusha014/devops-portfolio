@@ -17,42 +17,43 @@ export default function Home() {
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto my-12">
         
-        {/* Unique Cyber Hexagonal Profile Frame */}
+        {/* Unique Cyberpunk Grid Profile Frame (Larger Scale) */}
         <div className="flex justify-center relative group">
           
-          {/* Outer Ambient Radial Glow */}
-          <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-emerald-500/10 to-transparent rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
+          {/* Background Neon Green Glow */}
+          <div className="absolute inset-0 bg-green-500/20 blur-3xl rounded-3xl opacity-70 group-hover:opacity-100 transition duration-700"></div>
 
           {/* Sci-Fi Status Badges */}
-          <div className="absolute -top-3 -left-2 z-20 bg-black/90 border border-green-500/50 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1.5">
+          <div className="absolute -top-4 -left-4 z-20 bg-black/90 border border-green-500/60 px-3 py-1 rounded-md text-[11px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 bg-green-400 rounded-full animate-ping"></span>
             SYS_ONLINE
           </div>
 
-          <div className="absolute -bottom-3 -right-2 z-20 bg-black/90 border border-green-500/50 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1.5">
+          <div className="absolute -bottom-4 -right-4 z-20 bg-black/90 border border-green-500/60 px-3 py-1 rounded-md text-[11px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1.5">
             <span className="text-xs">⚡</span> K8S_READY
           </div>
 
-          {/* Hexagonal Clip Frame with Border Accent */}
-          <div className="relative w-64 h-80 p-[2px] bg-gradient-to-b from-green-500/50 via-gray-800 to-green-500/20 [clip-path:polygon(12%_0%,88%_0%,100%_12%,100%_88%,88%_100%,12%_100%,0%_88%,0%_12%)] group-hover:from-green-400 transition-all duration-500">
+          {/* Larger Futuristic Cyber Card Frame (w-80 md:w-96 h-[460px] md:h-[500px]) */}
+          <div className="relative w-80 md:w-96 h-[460px] md:h-[500px] rounded-3xl border-2 border-green-500/40 bg-gradient-to-b from-gray-900/90 via-black to-gray-950 p-3 shadow-2xl shadow-green-500/20 group-hover:border-green-400 transition-all duration-500 overflow-hidden flex items-center justify-center">
             
-            {/* Inner Dark Hex Shield Container */}
-            <div className="w-full h-full bg-[#0a0e14] relative [clip-path:polygon(12%_0%,88%_0%,100%_12%,100%_88%,88%_100%,12%_100%,0%_88%,0%_12%)] overflow-hidden flex items-center justify-center">
-              
-              {/* Corner Sci-Fi Bracket Overlay Line */}
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-80"></div>
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-80"></div>
+            {/* Cyber Grid Pattern Backdrop */}
+            <div className="absolute inset-0 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:16px_16px] opacity-20 pointer-events-none"></div>
 
-              {/* Profile Photo */}
-              <Image
-                src={profileImg}
-                alt="Chamod Dinusha"
-                fill
-                sizes="(max-width: 768px) 100vw, 256px"
-                className="object-cover transform group-hover:scale-105 transition duration-700 ease-out filter brightness-105 contrast-105"
-                priority
-              />
-            </div>
+            {/* Corner Bracket Sci-Fi Accents */}
+            <div className="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-green-400 z-10"></div>
+            <div className="absolute top-3 right-3 w-5 h-5 border-t-2 border-r-2 border-green-400 z-10"></div>
+            <div className="absolute bottom-3 left-3 w-5 h-5 border-b-2 border-l-2 border-green-400 z-10"></div>
+            <div className="absolute bottom-3 right-3 w-5 h-5 border-b-2 border-r-2 border-green-400 z-10"></div>
+
+            {/* Profile Photo - Scaled Larger */}
+            <Image
+              src={profileImg}
+              alt="Chamod Dinusha"
+              fill
+              sizes="(max-width: 768px) 100vw, 400px"
+              className="object-contain rounded-2xl transform group-hover:scale-105 transition duration-700 ease-out filter brightness-105 contrast-105"
+              priority
+            />
           </div>
         </div>
 
