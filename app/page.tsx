@@ -1,5 +1,4 @@
 import Terminal from "./components/Terminal";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto my-12">
         
-        {/* Animated GIF Profile Character (Seamless Blend & Larger Scale) */}
+        {/* MP4 Animated Video Container */}
         <div className="flex justify-center relative group">
           
           {/* Subtle Ambient Green Backdrop Glow */}
@@ -32,17 +31,18 @@ export default function Home() {
             <span className="text-xs">⚡</span> K8S_READY
           </div>
 
-          {/* Transparent Overlay GIF Container (Removes White Box via Blend Mode) */}
-          <div className="relative w-80 md:w-[420px] h-[450px] md:h-[520px] transition-transform duration-500 ease-out group-hover:scale-105">
-            <Image
-              src="/profile.gif"
-              alt="Chamod Dinusha Walking Animation"
-              fill
-              unoptimized
-              sizes="(max-width: 768px) 100vw, 450px"
-              className="object-contain mix-blend-screen brightness-110 contrast-125"
-              priority
-            />
+          {/* HTML5 Transparent Auto-Playing MP4 Video Container */}
+          <div className="relative w-80 md:w-[420px] h-[450px] md:h-[520px] flex items-center justify-center">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-contain mix-blend-screen brightness-110 contrast-125 pointer-events-none"
+            >
+              <source src="/profile.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
