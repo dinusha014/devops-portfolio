@@ -1,4 +1,6 @@
 import Terminal from "./components/Terminal";
+import Image from "next/image";
+import profileImg from "@/public/profile.png";
 
 export default function Home() {
   return (
@@ -15,34 +17,42 @@ export default function Home() {
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto my-12">
         
-        {/* MP4 Animated Video Container */}
+        {/* Unique Cyber Hexagonal Profile Frame */}
         <div className="flex justify-center relative group">
           
-          {/* Subtle Ambient Green Backdrop Glow */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 via-emerald-500/10 to-transparent rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
+          {/* Outer Ambient Radial Glow */}
+          <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-emerald-500/10 to-transparent rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
 
-          {/* Floating Tech Badges */}
-          <div className="absolute -top-4 -left-4 z-20 bg-black/80 border border-green-500/50 px-2.5 py-1 rounded-md text-[11px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1">
+          {/* Sci-Fi Status Badges */}
+          <div className="absolute -top-3 -left-2 z-20 bg-black/90 border border-green-500/50 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 bg-green-400 rounded-full animate-ping"></span>
             SYS_ONLINE
           </div>
 
-          <div className="absolute bottom-2 -right-4 z-20 bg-black/80 border border-green-500/50 px-2.5 py-1 rounded-md text-[11px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1">
+          <div className="absolute -bottom-3 -right-2 z-20 bg-black/90 border border-green-500/50 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1.5">
             <span className="text-xs">⚡</span> K8S_READY
           </div>
 
-          {/* HTML5 Transparent Auto-Playing MP4 Video Container */}
-          <div className="relative w-80 md:w-[420px] h-[450px] md:h-[520px] flex items-center justify-center">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-contain mix-blend-screen brightness-110 contrast-125 pointer-events-none"
-            >
-              <source src="/profile.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          {/* Hexagonal Clip Frame with Border Accent */}
+          <div className="relative w-64 h-80 p-[2px] bg-gradient-to-b from-green-500/50 via-gray-800 to-green-500/20 [clip-path:polygon(12%_0%,88%_0%,100%_12%,100%_88%,88%_100%,12%_100%,0%_88%,0%_12%)] group-hover:from-green-400 transition-all duration-500">
+            
+            {/* Inner Dark Hex Shield Container */}
+            <div className="w-full h-full bg-[#0a0e14] relative [clip-path:polygon(12%_0%,88%_0%,100%_12%,100%_88%,88%_100%,12%_100%,0%_88%,0%_12%)] overflow-hidden flex items-center justify-center">
+              
+              {/* Corner Sci-Fi Bracket Overlay Line */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-80"></div>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-80"></div>
+
+              {/* Profile Photo */}
+              <Image
+                src={profileImg}
+                alt="Chamod Dinusha"
+                fill
+                sizes="(max-width: 768px) 100vw, 256px"
+                className="object-cover transform group-hover:scale-105 transition duration-700 ease-out filter brightness-105 contrast-105"
+                priority
+              />
+            </div>
           </div>
         </div>
 
