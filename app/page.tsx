@@ -17,44 +17,30 @@ export default function Home() {
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto my-12">
         
-        {/* Profile Image Card with Futuristic Tech Motion */}
-        <div className="flex justify-center relative group">
+        {/* Profile Image with Seamless Transparent Motion (No Box/Border) */}
+        <div className="flex justify-center relative group [perspective:1000px]">
           
-          {/* Background Ambient Glow */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-green-500/30 to-emerald-500/30 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+          {/* Subtle Ambient Green Backdrop Glow */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 via-emerald-500/10 to-transparent rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
 
-          {/* Floating Tech Badge Left Top */}
-          <div className="absolute -top-3 -left-4 z-20 bg-black/80 border border-green-500/50 px-2 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1">
+          {/* Floating Status Badges */}
+          <div className="absolute -top-2 -left-2 z-20 bg-black/80 border border-green-500/50 px-2 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-bounce duration-1000 hidden sm:flex items-center gap-1">
             <span className="h-1.5 w-1.5 bg-green-400 rounded-full animate-ping"></span>
             SYS_ONLINE
           </div>
 
-          {/* Floating Tech Badge Right Bottom */}
-          <div className="absolute -bottom-3 -right-4 z-20 bg-black/80 border border-green-500/50 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1">
+          <div className="absolute bottom-2 -right-2 z-20 bg-black/80 border border-green-500/50 px-2.5 py-1 rounded-md text-[10px] font-mono text-green-400 shadow-lg animate-pulse hidden sm:flex items-center gap-1">
             <span className="text-xs">⚡</span> K8S_READY
           </div>
 
-          {/* Main Card Container */}
-          <div className="relative w-64 h-80 rounded-2xl overflow-hidden border-2 border-green-500/40 bg-gradient-to-b from-gray-900 via-black to-gray-950 p-2 shadow-2xl shadow-green-500/20 group-hover:border-green-400 transition-all duration-500">
-            
-            {/* Tech Radar Laser Scanning Line */}
-            <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
-              <div className="w-full h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent shadow-[0_0_15px_#22c55e] animate-[bounce_3s_infinite] opacity-70"></div>
-            </div>
-
-            {/* Corner Bracket Accents for Sci-Fi Look */}
-            <div className="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-green-400 z-10"></div>
-            <div className="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-green-400 z-10"></div>
-            <div className="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-green-400 z-10"></div>
-            <div className="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-green-400 z-10"></div>
-
-            {/* Profile Image with subtle Zoom Motion on Hover */}
+          {/* Transparent Profile Image with Smooth Entrance Turn Animation */}
+          <div className="relative w-72 h-96 transition-all duration-700 ease-out transform group-hover:[transform:rotateY(0deg)_scale(1.05)] [transform:rotateY(-12deg)] drop-shadow-[0_10px_25px_rgba(34,197,94,0.15)] group-hover:drop-shadow-[0_15px_35px_rgba(34,197,94,0.3)]">
             <Image
               src={profileImg}
               alt="Chamod Dinusha"
               fill
-              sizes="(max-width: 768px) 100vw, 256px"
-              className="object-cover rounded-xl transform group-hover:scale-105 transition duration-700 ease-out grayscale-[20%] group-hover:grayscale-0"
+              sizes="(max-width: 768px) 100vw, 300px"
+              className="object-contain filter brightness-105 contrast-105"
               priority
             />
           </div>
